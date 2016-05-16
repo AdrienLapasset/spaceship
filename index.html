@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+
+        body {
+            background-image: url("img/stars.gif");
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        img {
+            height: 100%;
+            position: absolute;
+            margin-left: 330px;
+        }
+
+        #bases > img {
+            z-index: 1000;
+        }
+
+        #toto {
+            margin-left: 230px;
+        }
+    </style>
+
+    <body>
+        <div id="bases"></div>
+        <div id="accessories"></div>    
+    </body>
+
+    <script>
+        var basesUrl = [
+            "bases/cap1.png",
+            "bases/cap2.png",
+            "bases/cap3.png",
+            "bases/cap4.png",
+            "bases/cap5.png",
+            "bases/cap6.png",
+            "bases/cap7.png",
+            "bases/cap8.png",
+            "bases/cap9.png",
+            "bases/cap10.png"
+        ]   
+
+        var baseImg = $('<img>');
+
+        var accessoriesUrl = [
+            "accessories/acc1.png",
+            "accessories/acc2.png",
+            "accessories/acc3.png",
+            "accessories/acc4.png",
+            "accessories/acc5.gif"
+        ]
+
+        var accessoriesImg = [ 
+            $('<img id="1">'),
+            $('<img id="2">'),
+            $('<img id="3">'),
+            $('<img id="4">'),
+            $('<img id="toto">')
+        ]
+
+        $(function(){
+            $(document).keypress(function(e){
+
+                //Dessine une base
+                var drawBase = function(n) {
+                        $("#bases").empty();
+                        baseImg.attr('src', basesUrl[n]);
+                        baseImg.appendTo('#bases');
+                };
+
+                //Dessine un accessoire
+                $.fn.drawAccessory = function(n) {
+                    if (this.length) {
+                        this.toggle();
+                    }
+
+                    else {
+                        accessoriesImg[n].attr('src', accessoriesUrl[n]);
+                        accessoriesImg[n].appendTo('#accessories');
+                    }
+                };
+                
+                // Affectation des images selon la touche pressée
+                switch(e.which) {
+
+                    //// BASES //// 
+
+                    case 113:
+                        drawBase(0);
+                    break;
+                    
+                    case 122:
+                        drawBase(1);
+                    break;
+
+                    case 100:
+                        drawBase(2);
+                    break;
+
+                    case 114:
+                        drawBase(3);
+                    break;
+
+                    case 103:
+                        drawBase(4);
+                    break;
+
+                    case 121:
+                        drawBase(5);
+                    break;
+
+                    case 106:
+                        drawBase(6);
+                    break;
+
+                    case 105:
+                        drawBase(7);
+                    break;
+
+                    case 108:
+                        drawBase(8);
+                    break;
+
+                    case 112:
+                        drawBase(9);
+                    break;
+
+
+                    //// ACCESSORIES ////
+
+                    case 97:
+                        $("#1").drawAccessory(0);
+                    break;
+
+                    case 98:
+                        $("#2").drawAccessory(1);
+                    break;
+
+                    case 99:
+                        $("#3").drawAccessory(2);
+                    break;
+
+                    case 111:
+                        $("#4").drawAccessory(3);
+                    break;
+
+                    case 101:
+                        $("#toto").drawAccessory(4); 
+                    break;
+                }
+            });
+        });
+    </script>
+</html>
