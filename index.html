@@ -18,16 +18,35 @@
         img {
             height: 100%;
             position: absolute;
-            margin-left: 330px;
+            margin-left: 360px;
+            margin-top: 5px;
+
         }
 
         #bases > img {
             z-index: 1000;
         }
+        #seven {
+            z-index: 1000;
+            margin-left: 210px;
+        }
+
+        #eight {
+            z-index: 1000;
+            margin-left: 200px;
+            margin-top: -40px;
+
+        }
 
         #toto {
-            margin-left: 230px;
+            margin-left: 300px;
+}
+        #six {
+            margin-left: 215px;
+            margin-top: -20px;
         }
+
+
     </style>
 
     <body>
@@ -56,7 +75,10 @@
             "accessories/acc2.png",
             "accessories/acc3.png",
             "accessories/acc4.png",
-            "accessories/acc5.gif"
+            "accessories/acc5.gif",
+            "accessories/acc6.gif",
+            "accessories/acc7.png",
+            "accessories/acc8.png"
         ]
 
         var accessoriesImg = [ 
@@ -64,7 +86,10 @@
             $('<img id="2">'),
             $('<img id="3">'),
             $('<img id="4">'),
-            $('<img id="toto">')
+            $('<img id="toto">'),
+            $('<img id="six">'),
+            $('<img id="seven">'),
+            $('<img id="eight">')
         ]
 
         $(function(){
@@ -141,11 +166,11 @@
                         $("#1").drawAccessory(0);
                     break;
 
-                    case 98:
+                    case 117:
                         $("#2").drawAccessory(1);
                     break;
 
-                    case 99:
+                    case 102:
                         $("#3").drawAccessory(2);
                     break;
 
@@ -156,7 +181,18 @@
                     case 101:
                         $("#toto").drawAccessory(4); 
                     break;
-                        //modif de loulou
+                        
+                    case 116:
+                        $("#six").drawAccessory(5);
+                    break; 
+
+                    case 115:
+                        $("#seven").drawAccessory(6);
+                    break; 
+
+                    case 104:
+                        $("#eight").drawAccessory(7);
+                    break;  
                 }
             });
         });
