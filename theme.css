@@ -40,8 +40,11 @@ img {
     margin-top: -20px;
 }
 
-p.instructions {
+p#instructions {
+    margin-top: 400px;
     color: #fff;
-    font-size: 24px;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 30px;
     text-align: center;
 }

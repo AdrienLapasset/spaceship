@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="theme.css">
 
 <body>
-    <p class="instructions">Press any key A to Z and spacebar to reset</p>
+    <p id="instructions">Press any key A to Z and spacebar to reset</p>
     <div id="bases"></div>
     <div id="accessories"></div>
 </body>
@@ -53,6 +53,7 @@
 
                 //Dessine une base
                 var drawBase = function(n) {
+                    $( "#instructions" ).hide("slow");
                     $("#bases").empty();
                     baseImg.attr('src', basesUrl[n]);
                     baseImg.appendTo('#bases');
@@ -60,6 +61,7 @@
 
                 //Dessine un accessoire
                 $.fn.drawAccessory = function(n) {
+                    $( "#instructions" ).hide("slow");
                     if (this.length) {
                         this.toggle();
                     }
@@ -79,6 +81,7 @@
                     case 32:
                     $("#bases").empty();
                     $("#accessories").empty();
+                    $( "#instructions" ).show();
                     break;
 
                     //// BASES //// 
