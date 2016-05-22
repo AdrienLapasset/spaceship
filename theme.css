@@ -1,0 +1,50 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-image: url("img/stars.gif");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+img {
+    height: 100%;
+    position: absolute;
+    margin-left: 360px;
+    margin-top: 5px;
+}
+
+#bases > img {
+    z-index: 1000;
+}
+
+#seven {
+    z-index: 1000;
+    margin-left: 210px;
+}
+
+#eight {
+    z-index: 1000;
+    margin-left: 200px;
+    margin-top: -40px;
+}
+
+#toto {
+    margin-left: 300px;
+}
+
+#six {
+    margin-left: 215px;
+    margin-top: -20px;
+}
+
+p#instructions {
+    margin-top: 400px;
+    color: #fff;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <style>
@@ -97,16 +98,69 @@
 
         $(function(){
             $(document).keypress(function(e){
+=======
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link rel="stylesheet" type="text/css" href="theme.css">
+
+<body>
+    <p id="instructions">Press any key A to Z and spacebar to reset</p>
+    <div id="bases"></div>
+    <div id="accessories"></div>
+</body>
+
+<script>
+    var basesUrl = [
+    "bases/cap1.png",
+    "bases/cap2.png",
+    "bases/cap3.png",
+    "bases/cap4.png",
+    "bases/cap5.png",
+    "bases/cap6.png",
+    "bases/cap7.png",
+    "bases/cap8.png",
+    "bases/cap9.png",
+    "bases/cap10.png"
+    ]   
+
+    var baseImg = $('<img>');
+
+    var accessoriesUrl = [
+    "accessories/acc1.png",
+    "accessories/acc2.png",
+    "accessories/acc3.png",
+    "accessories/acc4.png",
+    "accessories/acc5.gif",
+    "accessories/acc6.gif",
+    "accessories/acc7.png",
+    "accessories/acc8.png"
+    ]
+
+    var accessoriesImg = [ 
+    $('<img id="1">'),
+    $('<img id="2">'),
+    $('<img id="3">'),
+    $('<img id="4">'),
+    $('<img id="toto">'),
+    $('<img id="six">'),
+    $('<img id="seven">'),
+    $('<img id="eight">')
+    ]
+
+    $(function(){
+        $(document).keypress(function(e){
+>>>>>>> FETCH_HEAD
 
                 //Dessine une base
                 var drawBase = function(n) {
-                        $("#bases").empty();
-                        baseImg.attr('src', basesUrl[n]);
-                        baseImg.appendTo('#bases');
+                    $( "#instructions" ).hide("slow");
+                    $("#bases").empty();
+                    baseImg.attr('src', basesUrl[n]);
+                    baseImg.appendTo('#bases');
                 };
 
                 //Dessine un accessoire
                 $.fn.drawAccessory = function(n) {
+                    $( "#instructions" ).hide("slow");
                     if (this.length) {
                         this.toggle();
                     }
@@ -120,84 +174,93 @@
                 // Affectation des images selon la touche pressée
                 switch(e.which) {
 
+                    ///// CONTROLES /////
+
+                    //Space bar = reset    
+                    case 32:
+                    $("#bases").empty();
+                    $("#accessories").empty();
+                    $( "#instructions" ).show();
+                    break;
+
                     //// BASES //// 
 
                     case 113:
-                        drawBase(0);
+                    drawBase(0);
                     break;
                     
                     case 122:
-                        drawBase(1);
+                    drawBase(1);
                     break;
 
                     case 100:
-                        drawBase(2);
+                    drawBase(2);
                     break;
 
                     case 114:
-                        drawBase(3);
+                    drawBase(3);
                     break;
 
                     case 103:
-                        drawBase(4);
+                    drawBase(4);
                     break;
 
                     case 121:
-                        drawBase(5);
+                    drawBase(5);
                     break;
 
                     case 106:
-                        drawBase(6);
+                    drawBase(6);
                     break;
 
                     case 105:
-                        drawBase(7);
+                    drawBase(7);
                     break;
 
                     case 108:
-                        drawBase(8);
+                    drawBase(8);
                     break;
 
                     case 112:
-                        drawBase(9);
+                    drawBase(9);
                     break;
 
 
                     //// ACCESSORIES ////
 
                     case 97:
-                        $("#1").drawAccessory(0);
+                    $("#1").drawAccessory(0);
                     break;
 
                     case 117:
-                        $("#2").drawAccessory(1);
+                    $("#2").drawAccessory(1);
                     break;
 
                     case 102:
-                        $("#3").drawAccessory(2);
+                    $("#3").drawAccessory(2);
                     break;
 
                     case 111:
-                        $("#4").drawAccessory(3);
+                    $("#4").drawAccessory(3);
                     break;
 
                     case 101:
-                        $("#toto").drawAccessory(4); 
+                    $("#toto").drawAccessory(4); 
                     break;
-                        
+
                     case 116:
-                        $("#six").drawAccessory(5);
+                    $("#six").drawAccessory(5);
                     break; 
 
                     case 115:
-                        $("#seven").drawAccessory(6);
+                    $("#seven").drawAccessory(6);
                     break; 
 
                     case 104:
-                        $("#eight").drawAccessory(7);
+                    $("#eight").drawAccessory(7);
                     break;  
                 }
             });
-        });
-    </script>
+    });
+</script>
 </html>
