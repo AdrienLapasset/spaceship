@@ -39,3 +39,9 @@ img {
     margin-left: 215px;
     margin-top: -20px;
 }
+
+p.instructions {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}

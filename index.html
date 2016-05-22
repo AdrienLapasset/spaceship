@@ -5,8 +5,9 @@
 <link rel="stylesheet" type="text/css" href="theme.css">
 
 <body>
+    <p class="instructions">Press any key A to Z and spacebar to reset</p>
     <div id="bases"></div>
-    <div id="accessories"></div>    
+    <div id="accessories"></div>
 </body>
 
 <script>
@@ -72,6 +73,14 @@
                 // Affectation des images selon la touche pressée
                 switch(e.which) {
 
+                    ///// CONTROLES /////
+
+                    //Space bar = reset    
+                    case 32:
+                    $("#bases").empty();
+                    $("#accessories").empty();
+                    break;
+
                     //// BASES //// 
 
                     case 113:
@@ -136,7 +145,7 @@
                     case 101:
                     $("#toto").drawAccessory(4); 
                     break;
-                    
+
                     case 116:
                     $("#six").drawAccessory(5);
                     break; 
