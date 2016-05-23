@@ -1,104 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<<<<<<< HEAD
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-    <style>
-        * {
-            margin:0;
-            padding:0;
-        }
-
-        body {
-            background-image: url("img/stars.gif");
-            background-size: cover;
-            background-position: 50% 50%;
-        }
-
-        img {
-            height: 100%;
-            position: absolute;
-            margin-left: 360px;
-            margin-top: 5px;
-
-        }
-
-        #bases > img {
-            z-index: 1000;
-        }
-
-        #seven {
-            z-index: 1000;
-            margin-left: 210px;
-        }
-
-        #eight {
-            z-index: 1000;
-            margin-left: 200px;
-            margin-top: -40px;
-
-        }
-
-        #toto {
-            margin-left: 300px;
-        }
-
-        #six {
-            margin-left: 215px;
-            margin-top: -20px;
-        }
-
-
-    </style>
-
-    <body>
-        <div id="bases"></div>
-        <div id="accessories"></div>    
-    
-    </body>
-
-    <script>
-        var basesUrl = [
-            "bases/cap1.png",
-            "bases/cap2.png",
-            "bases/cap3.png",
-            "bases/cap4.png",
-            "bases/cap5.png",
-            "bases/cap6.png",
-            "bases/cap7.png",
-            "bases/cap8.png",
-            "bases/cap9.png",
-            "bases/cap10.png"
-        ]   
-
-        var baseImg = $('<img>');
-
-        var accessoriesUrl = [
-            "accessories/acc1.png",
-            "accessories/acc2.png",
-            "accessories/acc3.png",
-            "accessories/acc4.png",
-            "accessories/acc5.gif",
-            "accessories/acc6.gif",
-            "accessories/acc7.png",
-            "accessories/acc8.png"
-        ]
-
-        var accessoriesImg = [ 
-            $('<img id="1">'),
-            $('<img id="2">'),
-            $('<img id="3">'),
-            $('<img id="4">'),
-            $('<img id="toto">'),
-            $('<img id="six">'),
-            $('<img id="seven">'),
-            $('<img id="eight">')
-        ]
-
-        $(function(){
-            $(document).keypress(function(e){
-=======
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <link rel="stylesheet" type="text/css" href="theme.css">
 
@@ -148,7 +50,6 @@
 
     $(function(){
         $(document).keypress(function(e){
->>>>>>> FETCH_HEAD
 
                 //Dessine une base
                 var drawBase = function(n) {
