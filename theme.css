@@ -3,7 +3,23 @@
     padding:0;
 }
 
-body {
+/*HOME*/
+
+.menu a.aquabico {
+    width: 320px;
+    height: 256px;
+    display: block;
+    background-image: url("img/aqua1.png");
+}
+
+.menu a.aquabico:hover {
+    background-image: url("img/aquabico.gif");
+}
+
+
+/*GENERATOR*/
+
+body.generator {
     background-image: url("img/stars.gif");
 }
 
