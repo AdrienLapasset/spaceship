@@ -48,6 +48,15 @@ img {
     margin-top: -20px;
 }
 
+#elevenbis,
+#eleven     {
+    margin-left: 250px;
+}
+
+#eleven {
+    z-index: 1001;
+}
+
 p#instructions {
     margin-top: 400px;
     color: #fff;

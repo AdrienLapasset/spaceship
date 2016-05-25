@@ -8,6 +8,7 @@
     <p id="instructions">Press any key A to Z and spacebar to reset</p>
     <div id="bases"></div>
     <div id="accessories"></div>
+
 </body>
 
 <script>
@@ -34,7 +35,13 @@
     "accessories/acc5.gif",
     "accessories/acc6.gif",
     "accessories/acc7.png",
-    "accessories/acc8.png"
+    "accessories/acc8.png",
+    "accessories/acc9.png",
+    "accessories/acc10.png",
+    "accessories/acc11.png",
+    "accessories/acc11b.png",
+    "accessories/acc12.png"
+
     ]
 
     var accessoriesImg = [ 
@@ -45,7 +52,12 @@
     $('<img id="toto">'),
     $('<img id="six">'),
     $('<img id="seven">'),
-    $('<img id="eight">')
+    $('<img id="eight">'),
+    $('<img id="nine">'),
+    $('<img id="ten">'),
+    $('<img id="eleven">'),
+    $('<img id="elevenbis">'),
+    $('<img id="twelve">')
     ]
 
     $(function(){
@@ -159,7 +171,26 @@
 
                     case 104:
                     $("#eight").drawAccessory(7);
-                    break;  
+                    break;
+
+                    case 109:
+                    $("#nine").drawAccessory(8);
+                    break;
+
+                    case 107:
+                    $("#ten").drawAccessory(9);
+                    break;
+
+                    case 110:
+                    $("#eleven").drawAccessory(10);
+                    $("#elevenbis").drawAccessory(11);
+                    break;
+
+                    case 98:
+                    $("#twelve").drawAccessory(12);
+                    break;
+
+
                 }
             });
     });
