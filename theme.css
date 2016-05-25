@@ -58,10 +58,14 @@ img {
 }
 
 p#instructions {
-    margin-top: 400px;
+    margin-top: 340px;
     color: #fff;
-    font-family: helvetica;
-    font-weight: bold;
+    font-family: 'OCRASTD';
     font-size: 30px;
     text-align: center;
+}
+
+@font-face {
+    font-family: 'OCRASTD';
+    src: url('OCRAStd.otf');
 }
