@@ -48,6 +48,15 @@ img {
     margin-top: -20px;
 }
 
+#ten {
+    z-index: 1002;
+    margin-left: 300px;
+}
+
+#nine {
+    margin-left: 218px;
+}
+
 #elevenbis,
 #eleven     {
     margin-left: 250px;
