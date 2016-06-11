@@ -5,27 +5,53 @@
 <link rel="stylesheet" type="text/css" href="home.css">
 
 <body>
-    <div class="menu">
-           <img class="btn" src="img/aquabico.png">
-           <img class="btn" src="img/bliblibico.png">
-    </div>
+	<div class="menu">
+		<a href="#maison">
+			<img class="btn" src="img/btn/maisonbico.png">
+		</a>
+		<img class="btn" src="img/btn/aquabico.png">
+		<img class="btn" src="img/btn/bliblibico.png">
+		<img class="btn" src="img/btn/labbico.png">
+	</div>
+	<div class="capsules">
+		<div id="maison">
+			<img src="img/capsules/maison.png">
+		</div>
+	</div>
 </body>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script>
-    $(document).ready(function()
-    {
-        $(".btn").hover(
-            function()
-            {
-              var src = $(this).attr("src");
-              $(this).attr("src", src.replace(/\.png$/i, ".gif"));
-          },
-          function()
-          {
-              var src = $(this).attr("src");
-              $(this).attr("src", src.replace(/\.gif$/i, ".png"));
-            });
-     });
+	$(document).ready(function()
+	{
+		$(".btn").hover(
+			function()
+			{
+				var src = $(this).attr("src");
+				$(this).attr("src", src.replace(/\.png$/i, ".gif"));
+			},
+			function()
+			{
+				var src = $(this).attr("src");
+				$(this).attr("src", src.replace(/\.gif$/i, ".png"));
+			});
+	});
 </script>
 
 </html>

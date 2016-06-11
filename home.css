@@ -7,12 +7,21 @@
 
 body {
     background-image : url("img/Fond1.gif");
-
 }
 
-.menu img {
+.menu {
+	margin-top: 280px;
+	height: 900px;
+	text-align: center;
+}
+
+.menu > .btn img {
     width: 320px;
     height: 256px;
+}
+
+.capsules {
+	text-align: center;
 }
   
 @font-face {
