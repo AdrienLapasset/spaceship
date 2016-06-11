@@ -4,11 +4,23 @@
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <link rel="stylesheet" type="text/css" href="home.css">
 
+<<<<<<< HEAD
 <body>
     <div class="menu">
            <img class="btn" src="img/aquabico.png">
            <img class="btn" src="img/bliblibico.png">
     </div>
+=======
+<body class="home">
+
+    <div class="menu">
+           <img class="btn" src="img/aquabico.png">
+           
+           <img class="btn" src="img/bliblibico.png" align="left">
+
+
+               </div>
+>>>>>>> FETCH_HEAD
 </body>
 
 <script>
@@ -25,6 +37,22 @@
               var src = $(this).attr("src");
               $(this).attr("src", src.replace(/\.gif$/i, ".png"));
             });
+<<<<<<< HEAD
+=======
+          
+          $(".btn").hover(
+            function()
+            {
+              var src = $(this).attr("src");
+              $(this).attr("src", src.replace(/\.png$/i, "gif"));
+            },
+            function()
+            {
+            var src = $(this).attr("src");
+            $(this).attr("src", src.replace(/\.gif$/i, "png"));
+          });
+
+>>>>>>> FETCH_HEAD
     });
 </script>
 
