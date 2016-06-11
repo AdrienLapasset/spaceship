@@ -1,0 +1,21 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+/*HOME*/
+
+body {
+    background-image : url("img/Fond1.gif");
+
+}
+
+.menu img {
+    width: 320px;
+    height: 256px;
+}
+  
+@font-face {
+    font-family: 'OCRASTD';
+    src: url('font/OCRAStd.otf');
+}
