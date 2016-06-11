@@ -23,6 +23,10 @@ body {
 .capsules {
 	text-align: center;
 }
+
+#maison > img {
+    height: 731px;
+}
   
 @font-face {
     font-family: 'OCRASTD';
