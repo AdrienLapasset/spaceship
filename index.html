@@ -11,16 +11,16 @@
 		</a>
 
 		<a href="#aqua">
-		    <img class="btn" src="img/btn/aquabico.png">
-	    </a>
+			<img class="btn" src="img/btn/aquabico.png">
+		</a>
 
-	    <a href="#megath">
-		    <img class="btn" src="img/btn/bliblibico.png">
-	    </a>
+		<a href="#megath">
+			<img class="btn" src="img/btn/bliblibico.png">
+		</a>
 
-	    <a href="#laboratoire">
-		   <img class="btn" src="img/btn/labbico.png">
-	    </a>
+		<a href="#laboratoire">
+			<img class="btn" src="img/btn/labbico.png">
+		</a>
 
 	</div>
 	<div class="capsules">
@@ -57,20 +57,36 @@
 
 
 <script>
-	$(document).ready(function()
-	{
-		$(".btn").hover(
-			function()
-			{
-				var src = $(this).attr("src");
-				$(this).attr("src", src.replace(/\.png$/i, ".gif"));
-			},
-			function()
-			{
-				var src = $(this).attr("src");
-				$(this).attr("src", src.replace(/\.gif$/i, ".png"));
-			});
-	});
-</script>
+//Btn Hover
+$(document).ready(function()
+{
+	$(".btn").hover(
+		function()
+		{
+			var src = $(this).attr("src");
+			$(this).attr("src", src.replace(/\.png$/i, ".gif"));
+		},
+		function()
+		{
+			var src = $(this).attr("src");
+			$(this).attr("src", src.replace(/\.gif$/i, ".png"));
+		});
+});
 
+//Smooth anchor
+$(function() {
+	$('a[href*="#"]:not([href="#"])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
+		}
+	});
+});
+</script>
 </html>
