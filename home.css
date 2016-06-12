@@ -15,31 +15,34 @@ body {
 	text-align: center;
 }
 
+.menu > .maisonbico {
+    position: relative;
+    top: -100px;
+    left: 50px;
+}
+
 .menu > .btn img {
     width: 320px;
     height: 256px;
 }
 
-.capsules {
+.capsules img {
 	text-align: center;
+    height: 731px;
 }
 
 #maison > img {
-    height: 731px;
     margin-top: 20px;
 }
 
 #laboratoire > img {
-    height: 731px;
 }
 
 #aqua > img {
-    height: 731px;
     margin-top: 20px;
 }
 
 #megath > img {
-    height: 731px;
     margin-bottom: 130px;
     margin-top: 20px;
 }
