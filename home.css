@@ -9,6 +9,9 @@ body {
     background-image : url("img/Fond1.gif");
 }
 
+body {
+    cursor: url("img/btn/curseur.png"), pointer;
+}
 .menu {
 	margin-top: 280px;
 	height: 900px;
@@ -17,8 +20,29 @@ body {
 
 .menu > .maisonbico {
     position: relative;
-    top: -100px;
-    left: 50px;
+    top: 150px;
+    left: 350px;
+
+}
+
+.menu > .aquabico {
+    position: relative;
+    bottom: 210px;
+    left: -300px;
+}
+
+.menu > .bliblibico {
+    position: relative;
+    bottom: -210px;
+    right: -310px;
+
+}
+
+.menu > .labbico {
+    position: relative;
+    top: -150px;
+    right: 300px;
+
 }
 
 .menu > .btn img {
@@ -33,18 +57,22 @@ body {
 
 #maison > img {
     margin-top: 20px;
+    margin-left: 255px;
 }
 
 #laboratoire > img {
+    margin-left: 255px;
 }
 
 #aqua > img {
     margin-top: 20px;
+    margin-left: 255px;
 }
 
 #megath > img {
     margin-bottom: 130px;
     margin-top: 20px;
+    margin-left: 250px;
 }
   
 @font-face {
