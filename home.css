@@ -16,8 +16,12 @@ body {
 }
 
 .menu > .btn img {
-    width: 320px;
-    height: 256px;
+    
+}
+
+#aquabico > img {
+    margin-top: 200px;
+    margin-bottom: 520px;
 }
 
 .capsules {
