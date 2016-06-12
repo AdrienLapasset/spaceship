@@ -15,7 +15,6 @@ body {
 	text-align: center;
 }
 
-<<<<<<< Updated upstream
 .menu > .maisonbico {
     position: relative;
     top: -100px;
@@ -25,14 +24,10 @@ body {
 .menu > .btn img {
     width: 320px;
     height: 256px;
-=======
-img > .labbico {
-    margin-left: 300px;
->>>>>>> Stashed changes
 }
 
 .capsules img {
-	text-align: center;
+	margin: auto;
     height: 731px;
 }
 
