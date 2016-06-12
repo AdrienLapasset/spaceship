@@ -16,12 +16,8 @@ body {
 }
 
 .menu > .btn img {
-    
-}
-
-#aquabico > img {
-    margin-top: 200px;
-    margin-bottom: 520px;
+    width: 320px;
+    height: 256px;
 }
 
 .capsules {
@@ -30,6 +26,22 @@ body {
 
 #maison > img {
     height: 731px;
+    margin-top: 20px;
+}
+
+#laboratoire > img {
+    height: 731px;
+}
+
+#aqua > img {
+    height: 731px;
+    margin-top: 20px;
+}
+
+#megath > img {
+    height: 731px;
+    margin-bottom: 130px;
+    margin-top: 20px;
 }
   
 @font-face {
