@@ -1,17 +1,17 @@
 * {
     margin:0;
     padding:0;
+    font-family: 'OCRASTD';
+    color: white;
 }
 
 /*HOME*/
 
 body {
     background-image : url("img/Fond1.gif");
+    /*cursor: url("img/curseur.png"), pointer;*/
 }
 
-body {
-    cursor: url("img/btn/curseur.png"), pointer;
-}
 .menu {
 	margin-top: 280px;
 	height: 900px;
@@ -50,9 +50,61 @@ body {
     height: 256px;
 }
 
+
+.capsules > section {
+    padding: 15px;
+}
+
 .capsules img {
-	margin: auto;
-    height: 731px;
+    width: 100%;
+}
+
+.capsule-header h1,
+.capsule-header h2 {
+    font-size: 30px; 
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+}
+
+.capsule-header h2 {
+    text-transform: capitalize;
+}
+
+.capsule-body {
+
+}
+
+.plan {
+    width: 913px;
+    margin: auto;
+}
+
+.legends {
+    height: 0;
+}
+
+.parts {
+    height: 0;
+}
+
+#aqua .legend {
+    position: relative;
+    top: 330px;
+    width: 270px;
+}
+
+#aqua .part {
+    position: relative;
+    top: 260px;
+    left: 230px;
+    height: 150px;
+    width: 250px;
+    border: 5px solid blue;
+}
+
+.part:hover {
+    background-color: blue; 
 }
 
 #maison > img {
@@ -74,7 +126,7 @@ body {
     margin-top: 20px;
     margin-left: 250px;
 }
-  
+
 @font-face {
     font-family: 'OCRASTD';
     src: url('font/OCRAStd.otf');
