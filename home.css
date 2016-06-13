@@ -62,12 +62,11 @@ body {
 .capsule-header h1,
 .capsule-header h2 {
     font-size: 30px; 
-    display: inline-block;
-    color: white;
     text-transform: uppercase;
 }
 
 .capsule-header h2 {
+    font-size: 24px;
     text-transform: capitalize;
 }
 
