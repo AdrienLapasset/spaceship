@@ -46,15 +46,19 @@
 				<h2> / Lieu de vie</h2>
 			</div>
 			<div class="capsule-body">
-				<div class="legends">
-					<div class="legend legend1">
-						<p>I am the meaining of that drawing !!!</p>
-					</div>
-				</div>
+				<ul class="legends">
+					<li>
+						Legende 1
+					</li>
+					<li>
+						Legend 2
+					</li>
+				</ul>
 				<div class="plan">
-					<div class="parts">
-						<div class="part part1"></div>
-					</div>
+					<ul class="parts">
+						<li class="part1"></li>
+						<li class="part2"></li>
+					</ul>
 					<img src="img/capsules/aqua.png">
 				</div>
 			</div>
@@ -98,40 +102,24 @@
 	</div>
 </body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script>
 	$(document).ready(function()
 	{
 //Legend
-$(".legend").hide();
+$(".legends > li").hide();
 
-$(".part1").hover( 
+$( '.parts > li' ).hover( 
 	function() {
-		$(".legend1").show();
+		var index = $( '.parts > li' ).index( this );
+		$( '.legends > li:eq(' + index + ')' ).show();
 	},
 	function() {
-		$(".legend1").hide();
+		var index = $( '.parts > li' ).index( this );
+		$( '.legends > li:eq(' + index + ')' ).hide();
 	});
 
 
 //Btn Hover
-
 $(".btn").hover(
 	function()
 	{
