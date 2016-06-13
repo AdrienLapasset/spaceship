@@ -4,7 +4,7 @@
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <link rel="stylesheet" type="text/css" href="generator.css">
 
-<body class="generator">
+<body>
     <p id="instructions">Press any key A to N and spacebar to reset</p>
     <div id="bases"></div>
     <div id="accessories"></div>
@@ -12,6 +12,11 @@
 </body>
 
 <script>
+    var backgroundUrl = [
+        "accessories/acc12.gif",
+        "accessories/acc13.gif"
+    ]
+
     var basesUrl = [
     "bases/cap1.png",
     "bases/cap2.png",
@@ -91,6 +96,10 @@
                         accessoriesImg[n].appendTo('#accessories');
                     }
                 };
+
+                var drawBackground = function(n) {
+                    $( "body" ).css('background-image', ' url(" ' + backgroundUrl[n] + ' ") ');
+                }
                 
                 // Affectation des images selon la touche pressée
                 switch(e.which) {
@@ -102,6 +111,16 @@
                     $("#bases").empty();
                     $("#accessories").empty();
                     $( "#instructions" ).show();
+                    break;
+
+                    //// BACKGROUND ////
+
+                    case 119:
+                    drawBackground(0);
+                    break;
+
+                    case 120:
+                    drawBackground(1);
                     break;
 
                     //// BASES //// 
@@ -213,6 +232,6 @@
 
                 }
             });
-    });
+});
 </script>
 </html>
