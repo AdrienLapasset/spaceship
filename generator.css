@@ -25,6 +25,11 @@ img {
     margin-left: 210px;
 }
 
+#sixteen {
+    z-index: 1003;
+    margin-left: 300px;
+}
+
 #eight {
     z-index: 1000;
     margin-left: 200px;
@@ -51,11 +56,25 @@ img {
 
 #elevenbis,
 #eleven     {
-    margin-left: 250px;
+    margin-left: 235px;
 }
 
 #eleven {
     z-index: 1001;
+}
+
+#fifteenbis,
+#fifteen     {
+    margin-left: 235px;
+}
+
+#fifteen {
+    z-index: 1002;
+}
+
+#fourteen {
+    margin-left: 218px;
+    z-index: 999;
 }
 
 p#instructions {
