@@ -93,34 +93,10 @@ body {
     list-style: none;
 }
 
-#aqua .legends > li:nth-child(1) {
-    top: 330px;
-    width: 270px;
-}
-
-#aqua .legends > li:nth-child(2) {
-    top: 430px;
-    width: 270px;
-}
-
 .parts > li {
     position: relative;
     list-style: none;
     border: 5px solid blue;
-}
-
-#aqua .parts > li:nth-child(1) {
-    top: 260px;
-    left: 230px;
-    height: 150px;
-    width: 250px;
-}
-
-#aqua .parts > li:nth-child(2) {
-    top: 360px;
-    left: 230px;
-    height: 150px;
-    width: 250px;
 }
 
 #maison > img {
