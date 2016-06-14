@@ -3,6 +3,7 @@
     padding:0;
     font-family: 'OCRASTD';
     color: white;
+    text-decoration: none;
 }
 
 /*HOME*/
@@ -12,34 +13,36 @@ body {
     /*cursor: url("img/curseur.png"), pointer;*/
 }
 
+.menu-outer {
+    height: 900px;
+    text-align: center;
+    margin-top: 280px;
+}
+
 .menu {
-	margin-top: 280px;
-	height: 900px;
-	text-align: center;
+}
+
+.menu a {
+    position: relative;
 }
 
 .menu > .maisonbico {
-    position: relative;
     top: 150px;
     left: 350px;
-
 }
 
 .menu > .aquabico {
-    position: relative;
     bottom: 210px;
     left: -300px;
 }
 
 .menu > .bliblibico {
-    position: relative;
     bottom: -210px;
     right: -310px;
 
 }
 
 .menu > .labbico {
-    position: relative;
     top: -150px;
     right: 300px;
 
@@ -50,6 +53,23 @@ body {
     height: 256px;
 }
 
+.menu-small {
+    top: 0px;
+    left: 200px;
+    width: 100%;
+    margin-top: 0;
+    text-align: right;
+    position: fixed;
+}
+
+.menu-small a {
+    position: initial;
+    display: block;
+}
+
+.menu-small img {
+    width: 150px;
+}
 
 .capsules > section {
     padding: 15px;

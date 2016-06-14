@@ -7,19 +7,21 @@
 <link rel="stylesheet" type="text/css" href="content.css">
 
 <body>
-	<div class="menu">
-		<a href="#maison" class="maisonbico">
-			<img class="btn" src="img/btn/maisonbico.png">
-		</a>
-		<a href="#aqua" class="aquabico">
-			<img class="btn" src="img/btn/aquabico.png">
-		</a>
-		<a href="#megath" class="bliblibico">
-			<img class="btn" src="img/btn/bliblibico.png">
-		</a>
-		<a href="#laboratoire" class="labbico">
-			<img class="btn" src="img/btn/labbico.png">
-		</a>
+	<div class="menu-outer">
+		<div class="menu">
+			<a href="#maison" class="maisonbico">
+				<img class="btn" src="img/btn/maisonbico.png">
+			</a>
+			<a href="#aqua" class="aquabico">
+				<img class="btn" src="img/btn/aquabico.png">
+			</a>
+			<a href="#megath" class="bliblibico">
+				<img class="btn" src="img/btn/bliblibico.png">
+			</a>
+			<a href="#laboratoire" class="labbico">
+				<img class="btn" src="img/btn/labbico.png">
+			</a>
+		</div>
 	</div>
 
 	<div class="capsules">
@@ -125,6 +127,22 @@
 <script>
 	$(document).ready(function()
 	{
+
+//NAV
+$(window).scroll(function() {    
+	var scroll = $(window).scrollTop();
+
+	if (scroll >= 900) {
+		$(".menu").addClass("menu-small");
+		$( ".menu-small" ).animate({
+			left: "0",
+		}, 1000);
+	} else {
+		$(".menu").removeClass("menu-small");
+	}
+});
+
+
 //Legend
 $(".legends > li").hide();
 
