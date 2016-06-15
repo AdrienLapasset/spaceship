@@ -2,7 +2,7 @@
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="librairies/jquery-3.0.0.min.js"></script>
 <link rel="stylesheet" type="text/css" href="home.css">
 <link rel="stylesheet" type="text/css" href="content.css">
 
@@ -22,6 +22,21 @@
 				<img class="btn" src="img/btn/labbico.png">
 			</a>
 		</div>
+	</div>
+
+	<div class="menu-small">
+		<a href="#maison" class="maisonbico">
+			<img class="btn" src="img/btn/maisonbico.png">
+		</a>
+		<a href="#aqua" class="aquabico">
+			<img class="btn" src="img/btn/aquabico.png">
+		</a>
+		<a href="#megath" class="bliblibico">
+			<img class="btn" src="img/btn/bliblibico.png">
+		</a>
+		<a href="#laboratoire" class="labbico">
+			<img class="btn" src="img/btn/labbico.png">
+		</a>
 	</div>
 
 	<div class="capsules">
@@ -133,12 +148,14 @@ $(window).scroll(function() {
 	var scroll = $(window).scrollTop();
 
 	if (scroll >= 900) {
-		$(".menu").addClass("menu-small");
-		$( ".menu-small" ).animate({
-			left: "0",
-		}, 1000);
+		$( ".menu-small" ).css(
+			"transform", "translateX(0)"
+		);
+
 	} else {
-		$(".menu").removeClass("menu-small");
+		$( ".menu-small" ).css(
+			"transform", "translateX(120px)"
+		);
 	}
 });
 

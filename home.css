@@ -14,7 +14,7 @@ body {
 }
 
 .menu-outer {
-    height: 900px;
+    height: 720px;
     text-align: center;
     margin-top: 280px;
 }
@@ -54,9 +54,10 @@ body {
 }
 
 .menu-small {
-    top: 0px;
-    left: 200px;
-    width: 100%;
+    transition: all .5s;
+    transform: translateX(120px);
+    top: 18px;
+    right: 0px;
     margin-top: 0;
     text-align: right;
     position: fixed;
