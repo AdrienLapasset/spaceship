@@ -111,12 +111,15 @@ body {
 .legends > li {
     position: relative;
     list-style: none;
+    width: 400px;
 }
 
 .parts > li {
     position: relative;
     list-style: none;
     border: 5px solid blue;
+    height: 150px;
+    width: 250px;
 }
 
 #maison > img {
