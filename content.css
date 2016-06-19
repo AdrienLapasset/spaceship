@@ -1,18 +1,45 @@
-
-/* AQUA */
-
-/* Legends */
-#aqua .legends > li:nth-child(1) {
-    top: 330px;
-    width: 270px;
+#maison .legends > li {
+    background-color: #ffb838;
 }
 
-#aqua .legends > li:nth-child(2) {
-    top: 430px;
-    width: 270px;
+#aqua .legends > li {
+    background-color: #48b784;
 }
 
-/*Parts*/
+#megath .legends > li {
+    background-color: #225aa8;
+}
+
+#laboratoire .legends > li {
+    background-color: #b4b4b4;
+}
+
+
+
+
+#maison .parts > li:nth-child(1) {
+   top: 380px;
+   left: 228px;
+   height: 267px;
+   width: 150px;
+}
+
+#maison .parts > li:nth-child(2) {
+   top: 103px;
+   left: 537px;
+   height: 267px;
+   width: 150px;
+}
+
+#maison .parts > li:nth-child(3) {
+   top: -457px;
+   left: 330px;
+   height: 267px;
+   width: 250px;
+}
+
+
+
 #aqua .parts > li:nth-child(1) {
     top: 260px;
     left: 230px;
@@ -21,11 +48,58 @@
 }
 
 #aqua .parts > li:nth-child(2) {
-    top: 360px;
-    left: 230px;
-    height: 150px;
-    width: 250px;
+ top: 470px;
+ left: 230px;
+ height: 70px;
+ width: 470px;
 }
+
+#aqua .parts > li:nth-child(3) {
+    top: -292px;
+    left: 260px;
+    height: 150px;
+    width: 390px;
+}
+
+
+
+#megath .parts > li:nth-child(1) {
+    top: 108px;
+    left: 260px;
+    height: 150px;
+    width: 390px;
+}
+
+#megath .parts > li:nth-child(2) {
+    top: 138px;
+    left: 307px;
+    height: 300px;
+    width: 300px;
+}
+
+#megath .parts > li:nth-child(3) {
+    top: -292px;
+    left: 260px;
+    height: 150px;
+    width: 390px;
+}
+
+
+
+#laboratoire .parts > li:nth-child(1) {
+   top: 493px;
+   left: 218px;
+   height: 189px;
+   width: 470px;
+}
+
+#laboratoire .parts > li:nth-child(2) {
+    top: -112px;
+    left: 260px;
+    height: 389px;
+    width: 390px;
+}
+
 
 
 
